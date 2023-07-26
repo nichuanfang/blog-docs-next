@@ -1,0 +1,15 @@
+{
+  "name": "blog-docs-next",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/nichuanfang/blog-docs-next.git",
+  "author": "jaychouzzz <f18326186224@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.9.9"
+  },
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  }
+}
