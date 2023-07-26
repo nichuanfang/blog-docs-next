@@ -6,10 +6,13 @@
   "author": "jaychouzzz <f18326186224@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "@vuepress/plugin-blog": "^1.9.4",
+    "@vuepress/theme-blog": "^2.3.3",
     "vuepress": "^1.9.9"
   },
   "scripts": {
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs"
-  }
+  },
+  "start": "react-scripts --openssl-legacy-provider start"
 }
