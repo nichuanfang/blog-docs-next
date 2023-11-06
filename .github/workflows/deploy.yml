@@ -1,6 +1,8 @@
 name: 部署到私服
 
-on: push
+on: 
+  push:
+  workflow_dispatch:
 
 jobs:
   build-and-deploy:
