@@ -21,7 +21,7 @@ module.exports = {
           },
         ],
       },
-      { text: '个人博客', link: 'https://blog.cinima.asia' },
+      { text: '个人博客', link: 'https://blog.jaychou.site' },
     ],
     // 侧边栏
     sidebar: 'auto',
