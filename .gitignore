@@ -24,3 +24,4 @@ lerna-debug.log
 # vs editor related files
 .vscode-test
 .vscode
+.vercel
