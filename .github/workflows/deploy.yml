@@ -13,14 +13,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@master
 
-      - uses: actions/checkout@v4
-        with:
-          repository: nichuanfang/blog-docs-next-vercel
-          ref: main
-          fetch-depth: 0
-          persist-credentials: false
-          path: blog-docs-next-vercel
-
       - name: Use Node.js
         uses: actions/setup-node@v2
         with:
@@ -52,13 +44,12 @@ jobs:
           yarn add -D vuepress
           yarn docs:build
 
-      - name: 发布到vercel仓库
+      # 更新项目
+      - name: 更新项目
         uses: Smart-Transportation/push@v1.3
         with:
-          directory: ./blog-docs-next-vercel
           github_token: ${{ secrets.GH_TOKEN }}
           branch: 'main'
-          author_email: 'f18326186224@gmail.com'
-          author_name: 'nichuanfang'
-          message: '🐳 chore: 更新vercel仓库'
-          repository: nichuanfang/blog-docs-next-vercel
+          author_email: 'github-actions[bot]@users.noreply.github.com'
+          author_name: 'github-actions[bot]'
+          message: '🐳 chore: 更新dist文件'
