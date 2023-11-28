@@ -72,7 +72,3 @@
 - 店铺信息更改功能等实现，使店主能够在管理后台实现店铺联系方式等基本信息的更改
 - 实现店铺活动的添加，使用 TreeView 实现对活动类型和所属区域、店铺的展示
 - 使用 vue 进行快速开发，实现通过手机浏览器访问店铺信息修改页面# 个人信息
-
-::: slot footer
-MIT Licensed | Copyright © 2018-present [Chuanfang Ni](https://github.com/nichuanfang)
-:::
