@@ -7,9 +7,19 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Checkout
         uses: actions/checkout@master
+
+      - uses: actions/checkout@v4
+        with:
+          repository: nichuanfang/blog-docs-next-vercel
+          ref: main
+          fetch-depth: 0
+          persist-credentials: false
+          path: blog-docs-next-vercel
 
       - name: Use Node.js
         uses: actions/setup-node@v2
@@ -42,24 +52,13 @@ jobs:
           yarn add -D vuepress
           yarn docs:build
 
-      - name: 发布docs服务
-        uses: cross-the-world/ssh-scp-ssh-pipelines@latest
-        env:
-          WELCOME: 'ssh scp ssh pipelines'
-          LASTSSH: 'Doing something after copying'
-        continue-on-error: true
+      - name: 发布到vercel仓库
+        uses: Smart-Transportation/push@v1.3
         with:
-          # HC代表发布xray配置的服务器
-          host: ${{ secrets.VPS_HOST }}
-          user: ${{ secrets.VPS_USER }}
-          pass: ${{ secrets.VPS_PASS }}
-          port: ${{ secrets.VPS_PORT }}
-          connect_timeout: 20s
-          first_ssh: |
-            systemctl stop nginx
-            rm -rf /root/docs
-          scp: |
-            './docs/.vuepress/dist/*' => /root/docs
-          last_ssh: |
-            chmod 777 /root/docs
-            systemctl start nginx
+          directory: ./blog-docs-next-vercel
+          github_token: ${{ secrets.GH_TOKEN }}
+          branch: 'main'
+          author_email: 'f18326186224@gmail.com'
+          author_name: 'nichuanfang'
+          message: '🐳 chore: 更新vercel仓库'
+          repository: nichuanfang/blog-docs-next-vercel
