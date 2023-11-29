@@ -45,12 +45,14 @@ export default hopeTheme({
 
   plugins: {
     // You should generate and use your own comment service
+    // 禁止评论
     comment: {
-      provider: "Giscus",
-      repo: "nichuanfang/Giscus",
-      repoId: "R_kgDOKzgW0A",
-      category: "Announcements",
-      categoryId: "DIC_kwDOKzgW0M4CbW-6",
+      provider: "None",
+      // provider: "Giscus",
+      // repo: "nichuanfang/Giscus",
+      // repoId: "R_kgDOKzgW0A",
+      // category: "Announcements",
+      // categoryId: "DIC_kwDOKzgW0M4CbW-6",
     },
 
     // All features are enabled for demo, only preserve features you need here

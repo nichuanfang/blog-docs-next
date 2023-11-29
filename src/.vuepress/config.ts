@@ -8,7 +8,6 @@ export default defineUserConfig({
   lang: "zh-CN",
   title: "MyDocuments",
   description: "个人文档平台",
-
   theme,
   plugins: [
     searchProPlugin({
