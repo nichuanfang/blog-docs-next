@@ -55,6 +55,18 @@ export default hopeTheme({
       // categoryId: "DIC_kwDOKzgW0M4CbW-6",
     },
 
+    components: {
+        // 你想使用的组件
+        components: [
+          // bilibili视频
+          "BiliBili",
+          // 在线运行代码
+          "CodePen",
+          // 展示音频 视频 如youtube视频
+          "VidStack"
+        ],
+    },
+      
     // All features are enabled for demo, only preserve features you need here
     mdEnhance: {
       align: true,
