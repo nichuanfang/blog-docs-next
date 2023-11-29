@@ -1,10 +1,10 @@
 # 基本信息
 
-> bilibili 视频
+<!-- > bilibili 视频
 
 <BiliBili bvid="BV1yR4y1L7KN" />
 
-<!-- > 普通视频
+> 普通视频
 
 <VidStack
   src="https://media-files.vidstack.io/720p.mp4"
@@ -48,11 +48,11 @@
   ]"
   thumbnails="https://media-files.vidstack.io/thumbnails.vtt"
   crossorigin
-/>
+/> -->
 
 > youtube 视频
 
 <VidStack
   src="youtube/XIzDDYrS4iE"
   title="VidStack YouTube Demo"
-/> -->
+/>
