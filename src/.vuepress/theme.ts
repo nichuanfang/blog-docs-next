@@ -1,26 +1,28 @@
-import { hopeTheme } from "vuepress-theme-hope";
-import navbar from "./navbar.js";
-import sidebar from "./sidebar.js";
+import { hopeTheme } from 'vuepress-theme-hope'
+import navbar from './navbar.js'
+import sidebar from './sidebar.js'
 
 export default hopeTheme({
-  hostname: "https://vuepress-theme-hope-docs-demo.netlify.app",
+  hostname: 'https://vuepress-theme-hope-docs-demo.netlify.app',
 
   author: {
-    name: "nichuanfang",
-    url: "https://github.com/nichuanfang",
+    name: 'nichuanfang',
+    url: 'https://github.com/nichuanfang',
   },
-  
-  iconAssets: "fontawesome-with-brands",
 
-  logo: "https://theme-hope-assets.vuejs.press/logo.svg",
+  iconAssets: 'fontawesome-with-brands',
 
-  repo: "nichuanfang/doc",
-  
-  repoLabel: "GitHub",
-  
+  logo: 'https://theme-hope-assets.vuejs.press/logo.svg',
+
+  repo: 'nichuanfang/doc',
+
+  darkmode: 'auto',
+
+  repoLabel: 'GitHub',
+
   repoDisplay: true,
 
-  docsDir: "src",
+  docsDir: 'src',
 
   // navbar
   navbar,
@@ -28,26 +30,26 @@ export default hopeTheme({
   // sidebar
   sidebar,
 
-  footer: "",
+  footer: '',
 
   displayFooter: true,
 
   encrypt: {
     config: {
-      "/demo/encrypt.html": ["1234"],
+      '/demo/encrypt.html': ['1234'],
     },
   },
 
   // page meta
   metaLocales: {
-    editLink: "在 GitHub 上编辑此页",
+    editLink: '在 GitHub 上编辑此页',
   },
 
   plugins: {
     // You should generate and use your own comment service
     // 禁止评论
     comment: {
-      provider: "None",
+      provider: 'None',
       // provider: "Giscus",
       // repo: "nichuanfang/Giscus",
       // repoId: "R_kgDOKzgW0A",
@@ -56,17 +58,17 @@ export default hopeTheme({
     },
 
     components: {
-        // 你想使用的组件
-        components: [
-          // bilibili视频
-          "BiliBili",
-          // 在线运行代码
-          "CodePen",
-          // 展示音频 视频 如youtube视频
-          "VidStack"
-        ],
+      // 你想使用的组件
+      components: [
+        // bilibili视频
+        'BiliBili',
+        // 在线运行代码
+        'CodePen',
+        // 展示音频 视频 如youtube视频
+        'VidStack',
+      ],
     },
-      
+
     // All features are enabled for demo, only preserve features you need here
     mdEnhance: {
       align: true,
@@ -109,7 +111,7 @@ export default hopeTheme({
       // mermaid: true,
 
       playground: {
-        presets: ["ts", "vue"],
+        presets: ['ts', 'vue'],
       },
 
       // install reveal.js before enabling it
@@ -119,14 +121,14 @@ export default hopeTheme({
 
       stylize: [
         {
-          matcher: "Recommended",
+          matcher: 'Recommended',
           replacer: ({ tag }) => {
-            if (tag === "em")
+            if (tag === 'em')
               return {
-                tag: "Badge",
-                attrs: { type: "tip" },
-                content: "Recommended",
-              };
+                tag: 'Badge',
+                attrs: { type: 'tip' },
+                content: 'Recommended',
+              }
           },
         },
       ],
@@ -196,4 +198,4 @@ export default hopeTheme({
     //   },
     // },
   },
-});
+})
