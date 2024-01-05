@@ -5,17 +5,17 @@ export default navbar([
   {
     text: '简历',
     icon: 'laptop-code',
-    link: '/resume',
+    link: '/resume/README.md',
   },
   {
     text: '面试指南',
     icon: 'lightbulb',
-    link: '/interview',
+    link: '/interview/README.md',
   },
   {
     text: '配置指南',
     icon: 'laptop-code',
-    link: '/config',
+    link: '/config/README.md',
   },
   {
     text: '项目',
