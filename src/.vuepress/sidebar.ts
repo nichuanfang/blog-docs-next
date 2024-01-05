@@ -40,5 +40,11 @@ export default sidebar({
       collapsible: true,
       link: "nogfw"
     },
-  ]
+  ],
+  "/interview/": [{
+      text: "interview",
+      icon: "book",
+      collapsible: false,
+      children: "structure"
+    }]
 });

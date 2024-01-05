@@ -12,6 +12,11 @@ export default navbar([
       icon: "config",
       link: "/config",
     },
+    {
+      text: "面试指南",
+      icon: "lightbulb",
+      link: "/interview",
+    },
   // "/demo/",
   {
     text: "项目",
