@@ -18,8 +18,8 @@ actions:
     link: ./resume/
     type: primary
 
-  - text: 配置指南
-    link: ./config/
+  - text: 面试指南
+    link: ./interview/
 # highlights:
 # - header: 易于安装
 #   image: /assets/image/box.svg
