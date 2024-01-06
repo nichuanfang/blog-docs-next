@@ -421,7 +421,98 @@ export default sidebar({
       text: '系统设计',
       collapsible: true,
       prefix: '系统设计',
-      children: 'structure',
+      children: [
+        {
+          text: 'MySQL 数据如何实时同步到 ES？',
+          collapsible: true,
+          link: 'MySQL 数据如何实时同步到 ES？',
+        },
+        {
+          text: '扫码登录原理',
+          collapsible: true,
+          link: '扫码登录原理',
+        },
+        {
+          text: '如何用 Redis 统计用户访问量？',
+          collapsible: true,
+          link: '如何用 Redis 统计用户访问量？',
+        },
+        {
+          text: '订单 30 分钟未支付自动取消怎么实现？',
+          collapsible: true,
+          link: '订单 30 分钟未支付自动取消怎么实现？',
+        },
+        {
+          text: '如何设计一个短链系统？',
+          collapsible: true,
+          link: '如何设计一个短链系统？',
+        },
+        {
+          text: '单点登录（SSO）的设计与实现',
+          collapsible: true,
+          link: '单点登录（SSO）的设计与实现',
+        },
+        {
+          text: '10w 级别数据 Excel 导入优化',
+          collapsible: true,
+          link: '10w 级别数据 Excel 导入优化',
+        },
+        {
+          text: '如何设计一个高并发系统？',
+          collapsible: true,
+          link: '如何设计一个高并发系统？',
+        },
+        {
+          text: '如何设计一个注册中心?',
+          collapsible: true,
+          link: '如何设计一个注册中心?',
+        },
+        {
+          text: '购物车系统怎么设计？',
+          collapsible: true,
+          link: '购物车系统怎么设计？',
+        },
+        {
+          text: '如何设计一个消息队列？',
+          collapsible: true,
+          link: '如何设计一个消息队列？',
+        },
+        {
+          text: '如何设计一个抢红包系统',
+          collapsible: true,
+          link: '如何设计一个抢红包系统',
+        },
+        {
+          text: '权限系统设计方案',
+          collapsible: true,
+          link: '权限系统设计方案',
+        },
+        {
+          text: '实时订阅推送设计与实现',
+          collapsible: true,
+          link: '实时订阅推送设计与实现',
+        },
+        {
+          text: '秒杀系统',
+          collapsible: true,
+          link: '秒杀系统',
+        },
+        {
+          text: '秒杀系统设计的 5 个要点',
+          collapsible: true,
+          link: '秒杀系统设计的 5 个要点',
+        },
+        {
+          text: '微信红包后台系统设计',
+          collapsible: true,
+          link: '微信红包后台系统设计',
+        },
+        {
+          text: '如何设计一个优惠券系统？',
+          collapsible: true,
+          link: '如何设计一个优惠券系统？',
+        },
+      ],
     },
     {
       text: '海量数据场景高频面试题',
