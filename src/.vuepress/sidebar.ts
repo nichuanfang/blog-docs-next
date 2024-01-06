@@ -420,6 +420,7 @@ export default sidebar({
     {
       text: '系统设计',
       collapsible: true,
+      icon: 'star',
       prefix: '系统设计',
       children: [
         {
@@ -516,6 +517,7 @@ export default sidebar({
     },
     {
       text: '海量数据场景高频面试题',
+      icon: 'star',
       collapsible: true,
       prefix: '海量数据场景高频面试题',
       children: 'structure',
