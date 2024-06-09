@@ -32,7 +32,7 @@ jobs:
 
       - name: Zip dist directory
         run: |
-          zip -r dist.zip src/.vuepress/dist
+          zip -r dist.zip src/.vuepress/dist/*
           mkdir -p dist
           mv dist.zip dist/
 
