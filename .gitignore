@@ -29,3 +29,8 @@ lerna-debug.log
 .temp
 dist
 download
+/.idea/vcs.xml
+/.idea/doc.iml
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/inspectionProfiles/profiles_settings.xml
