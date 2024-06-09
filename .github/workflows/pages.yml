@@ -49,6 +49,4 @@ jobs:
             'dist/dist.zip' => /root/doc/
           last_ssh: |
             cd /root/doc
-            unzip -o dist.zip
-            rm dist.zip
             systemctl restart nginx
