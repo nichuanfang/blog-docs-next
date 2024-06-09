@@ -30,6 +30,12 @@ jobs:
       - name: Build
         run: npm run docs:build
 
+      - name: Zip dist directory
+        run: |
+          zip -r dist.zip src/.vuepress/dist
+          mkdir -p dist
+          mv dist.zip dist/
+
       - name: 更新doc
         uses: cross-the-world/ssh-scp-ssh-pipelines@latest
         continue-on-error: true
@@ -40,6 +46,9 @@ jobs:
           port: ${{ secrets.VPS_PORT }}
           connect_timeout: 10s
           scp: |
-            'src/.vuepress/dist/*' => /root/doc/
+            'dist/dist.zip' => /root/doc/
           last_ssh: |
+            cd /root/doc
+            unzip -o dist.zip
+            rm dist.zip
             systemctl restart nginx
