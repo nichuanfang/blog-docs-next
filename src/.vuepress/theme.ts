@@ -10,13 +10,13 @@ export default hopeTheme({
     url: 'https://github.com/nichuanfang',
   },
 
-  iconAssets: 'fontawesome-with-brands',
+  iconAssets: 'iconify',
 
   logo: 'https://theme-hope-assets.vuejs.press/logo.svg',
 
   repo: 'nichuanfang/doc',
 
-  darkmode: 'toggle',
+  darkmode: 'enable',
 
   repoLabel: 'GitHub',
 
