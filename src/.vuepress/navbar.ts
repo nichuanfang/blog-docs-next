@@ -15,7 +15,7 @@ export default navbar([
   {
     text: '面试题精简版',
     icon: 'laptop-code',
-    link: '/interview/面试题&精简版/面试题&精简版.md',
+    link: '/面试题&精简版/面试题&精简版.md',
   },
   {
     text: '配置指南',
