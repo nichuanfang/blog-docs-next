@@ -13,7 +13,7 @@ export default navbar([
     link: '/interview/README.md',
   },
   {
-    text: '配置指南',
+    text: '面试题精简版',
     icon: 'laptop-code',
     link: '/interview/面试题&精简版/面试题&精简版.md',
   },
