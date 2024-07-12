@@ -123,12 +123,6 @@ export default sidebar({
           ],
         },
         {
-          text: '面试题&精简版',
-          icon: 'leaf',
-          collapsible: true,
-          link: '/面试题&精简版/面试题&精简版'
-        },
-        {
           text: 'web',
           collapsible: true,
           prefix: 'web',
