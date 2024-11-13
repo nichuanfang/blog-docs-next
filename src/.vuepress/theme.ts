@@ -16,7 +16,7 @@ export default hopeTheme({
 
   repo: 'nichuanfang/doc',
 
-  darkmode: 'enable',
+  darkmode: 'switch',
 
   repoLabel: 'GitHub',
 

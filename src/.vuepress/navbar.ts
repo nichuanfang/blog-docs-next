@@ -2,11 +2,11 @@ import { navbar } from 'vuepress-theme-hope'
 
 export default navbar([
   "/",
-  {
-    text: "简历",
-    icon: "laptop-code",
-    link: "/resume/README.md",
-  },
+  // {
+  //   text: "简历",
+  //   icon: "laptop-code",
+  //   link: "/resume/README.md",
+  // },
   {
     text: "面试指南",
     icon: "lightbulb",
@@ -46,6 +46,6 @@ export default navbar([
   {
     text: "个人博客",
     icon: "book",
-    link: "https://blog.jaychou.site",
+    link: "https://blog.chuanfang.org",
   },
 ]);
