@@ -51,4 +51,4 @@ jobs:
             cd /root/doc
             unzip -o dist.zip
             rm dist.zip
-            systemctl restart nginx
+            docker restart nginx

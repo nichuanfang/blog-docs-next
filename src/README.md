@@ -13,10 +13,10 @@ bgImageStyle:
 heroText: MyDocuments
 tagline: 个人文档平台
 actions:
-  - text: 个人简历
-    icon: lightbulb
-    link: ./resume/
-    type: primary
+  # - text: 个人简历
+  #   icon: lightbulb
+  #   link: ./resume/
+  #   type: primary
 
   - text: 面试指南
     link: ./interview/
